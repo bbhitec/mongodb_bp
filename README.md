@@ -3,11 +3,15 @@
 Methodology and features implementation for the MongoDB structure.
 
 ## Gains
+
 - MongoDB basics
-    - Operators, Querying
+    - Operators, filtering
+    - [] searching
     - Database interfacing with JS
-- Express.js server configuration
-- Postman API building and testing
+    - find() requests pagination
+- Express.js backend server configuration
+    - Query parameters handling
+- Postman API CRUD testing
 
 <br>
 
