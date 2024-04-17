@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "bf40f6b8-e285-4dd1-9ab0-4718b3636451",
+		"name": "MongoDB doodle local",
+		"description": "the corresponding node/express server must be running for those",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32005432"
+	},
+	"item": [
+		{
+			"name": "mongodb_doodle1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_doodle1_pages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogs?p=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_doodle_post1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"MAGNA ADIPISICING NON2\",\r\n    \"content\": \"Laboris occaecat fugiat ea voluptate veniam eu anim elit proident magna amet. Duis commodo dolore sint voluptate. Elit esse est esse nisi fugiat velit aute enim Lorem sit tempor dolore ullamco. Sint eiusmod sunt labore excepteur adipisicing consequat esse esse eiusmod occaecat eiusmod qui. Culpa in irure eiusmod irure ea amet sit elit aliqua excepteur. Lorem ex qui mollit est. Consequat sit culpa magna sit.\\r\\nCillum ad laborum occaecat reprehenderit sint elit. Anim veniam fugiat sunt laboris do adipisicing minim ad. Laborum officia elit nulla excepteur ad aliqua qui in ullamco magna qui.\\r\\n\",\r\n    \"author\": \"Ingrid Delaney\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blogs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_doodle_id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogs/660dc1940894599ee5525e0b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs",
+						"660dc1940894599ee5525e0b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_doodle_id_del",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/blogs/66166a3e68eedf5fc8a09f3d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs",
+						"66166a3e68eedf5fc8a09f3d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "mongodb_doodle_id_update",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"MAGNA ADIPISICING NON33333\",\r\n    \"content\": \"Laboris occaecat fugiat ea voluptate veniam eu anim elit proident magna amet. Duis commodo dolore sint voluptate. Elit esse est esse nisi fugiat velit aute enim Lorem sit tempor dolore ullamco. Sint eiusmod sunt labore excepteur adipisicing consequat esse esse eiusmod occaecat eiusmod qui. Culpa in irure eiusmod irure ea amet sit elit aliqua excepteur. Lorem ex qui mollit est. Consequat sit culpa magna sit.\\r\\nCillum ad laborum occaecat reprehenderit sint elit. Anim veniam fugiat sunt laboris do adipisicing minim ad. Laborum officia elit nulla excepteur ad aliqua qui in ullamco magna qui.\\r\\n\",\r\n    \"author\": \"Ingrid Delaney\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/blogs/661668ba6465836fae78e77e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"blogs",
+						"661668ba6465836fae78e77e"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
